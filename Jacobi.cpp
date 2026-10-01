@@ -81,7 +81,7 @@ int main(int argc, char** argv)
     for (int i = 0; i < N; i++) {
         double s = 0.0;
         for (int j = 0; j < N; j++)
-            s += A[(size_t)i * N + j] * x_true[j];
+            s += A[i * N + j] * x_true[j];
         b[i] = s;
     }
 
